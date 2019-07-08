@@ -1,10 +1,5 @@
-pipeline {
-    agent any
-    stages {
-        stage('build') {
-            steps {
-                bat 'echo hello world'
-            }
-        }
-    }
+node()
+{
+    print "DEBUG: parameter target = ${target}"
+    print "DEBUG: parameter build = ${build}"
 }
